@@ -7,20 +7,19 @@
       <Unit0>
         <Filename Value="gui_resourceless.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <TopLine Value="10"/>
+        <TopLine Value="3"/>
         <CursorPos X="3" Y="3"/>
-        <UsageCount Value="50"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="form_main.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="form_Main"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="21"/>
-        <CursorPos X="15" Y="36"/>
-        <UsageCount Value="50"/>
+        <CursorPos X="24" Y="39"/>
+        <UsageCount Value="52"/>
         <Loaded Value="True"/>
       </Unit1>
       <Unit2>
@@ -172,7 +171,7 @@
         <UsageCount Value="10"/>
       </Unit21>
     </Units>
-    <JumpHistory Count="28" HistoryIndex="27">
+    <JumpHistory Count="29" HistoryIndex="28">
       <Position1>
         <Filename Value="gui_resourceless.lpr"/>
         <Caret Line="17" TopLine="6"/>
@@ -285,6 +284,10 @@
         <Filename Value="gui_resourceless.lpr"/>
         <Caret Line="26" Column="3" TopLine="12"/>
       </Position28>
+      <Position29>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="40" Column="21" TopLine="28"/>
+      </Position29>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>

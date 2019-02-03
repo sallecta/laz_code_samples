@@ -47,7 +47,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="gui_resourceless"/>
+      <Filename Value="gui_resourceless.out"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
