@@ -22,6 +22,10 @@ implementation
 {Form Creation}
 constructor Tform_main.Create(AOwner: TComponent);
 begin
+  {app icon}
+  //Application.Icon.Assign('media/MyIcon.ico');
+  Application.Icon.LoadFromFile('media/MyIcon.ico');
+  {end app icon}
   {!}inherited CreateNew(AOwner, 1);{!}
   Position := poScreenCenter;
   Height := 400;

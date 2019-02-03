@@ -3,7 +3,7 @@
   <ProjectSession>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="2">
+    <Units Count="5">
       <Unit0>
         <Filename Value="gui_resourceless.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -16,11 +16,53 @@
         <UnitName Value="form_Main"/>
         <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
+        <TopLine Value="16"/>
+        <CursorPos X="5" Y="26"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
       </Unit1>
+      <Unit2>
+        <Filename Value="/usr/share/lazarus/2.0.0RC3/lcl/graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="1210"/>
+        <CursorPos X="3" Y="1210"/>
+        <UsageCount Value="10"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="/usr/share/fpcsrc/3.0.4/rtl/objpas/classes/classesh.inc"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="418"/>
+        <CursorPos X="3" Y="428"/>
+        <UsageCount Value="10"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="/usr/share/lazarus/2.0.0RC3/lcl/forms.pp"/>
+        <UnitName Value="Forms"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="1567"/>
+        <CursorPos X="44" Y="1604"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit4>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="27" Column="51" TopLine="23"/>
+      </Position1>
+      <Position2>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="7" Column="44"/>
+      </Position2>
+      <Position3>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="26" Column="24" TopLine="16"/>
+      </Position3>
+      <Position4>
+        <Filename Value="/usr/share/lazarus/2.0.0RC3/lcl/forms.pp"/>
+      </Position4>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes Count="0" ActiveMode="default"/>
