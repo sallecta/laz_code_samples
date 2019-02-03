@@ -4,7 +4,7 @@ unit form_Main;
 
 interface
 
-uses Interfaces, Forms, StdCtrls, Classes;
+uses Interfaces, Forms, StdCtrls, Classes, SysUtils, FileUtil;
 
 type Tform_main = class(TForm)
     {Form Creation}
@@ -14,22 +14,18 @@ type Tform_main = class(TForm)
     MyButton: TButton;
     {Form Actions}
     procedure CloseMainForm(ASender: TObject);
-    {Form Logic}
-    procedure logic();
   end;
 
 implementation
 {Form Creation}
 constructor Tform_main.Create(AOwner: TComponent);
 begin
-  {app icon}
-  //Application.Icon.Assign('media/MyIcon.ico');
-  Application.Icon.LoadFromFile('media/MyIcon.ico');
-  {end app icon}
+
   {!}inherited CreateNew(AOwner, 1);{!}
+  Caption :='gui_resourceless';
   Position := poScreenCenter;
-  Height := 400;
-  Width := 400;
+  Height := 100;
+  Width := 300;
   VertScrollBar.Visible := False;
   HorzScrollBar.Visible := False;
   {Form Controls}
@@ -38,13 +34,12 @@ begin
   begin
     Height := 30;
     Left := 100;
-    Top := 100;
+    Top := 32;
     Width := 100;
     Caption := 'Close';
     {MyButton.}OnClick := @CloseMainForm;
     Parent := Self;
   end;
-  logic;
 end;
 {Form Actions}
 procedure Tform_main.CloseMainForm(ASender: TObject);
@@ -53,13 +48,6 @@ begin
   Close;
 end;
 
-
-
-{Form Logic}
-procedure Tform_main.logic();
-begin
-  writeln('Tform_main.logic');
-end;
 
 end.
 
