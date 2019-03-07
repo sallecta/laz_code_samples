@@ -20,6 +20,7 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
+      <DestinationDirectory Value="/media/data/development/lazarus/lazarus_git_projects/lazsudo"/>
     </PublishOptions>
     <RunParams>
       <FormatVersion Value="2"/>
@@ -47,7 +48,7 @@
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="gui_resourceless.out"/>
+      <Filename Value="application/$NameOnly($(ProjFile)).$(SrcOS)"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
