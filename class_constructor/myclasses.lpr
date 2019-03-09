@@ -1,7 +1,6 @@
 program myclasses;
 
-{$mode objfpc}// directive to be used for defining classes
-{$m+}// directive to be used for using constructor
+{$mode objfpc}
 
 uses
   unit_myclasses;
