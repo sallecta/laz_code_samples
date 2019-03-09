@@ -10,8 +10,7 @@
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <AutoCreateForms Value="False"/>
-      <Title Value="gui_resourceless"/>
+      <Title Value="myclasses"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
@@ -20,52 +19,33 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <DestinationDirectory Value="/media/data/development/lazarus/lazarus_git_projects/laz_unitz/toLang/example"/>
+      <DestinationDirectory Value="/media/data/development/lazarus/lazarus_git_projects/laz_code_samples/class_constructor"/>
+      <CompressFinally Value="False"/>
+      <UseFileFilters Value="True"/>
     </PublishOptions>
     <RunParams>
       <FormatVersion Value="2"/>
-      <Modes Count="1">
-        <Mode0 Name="default"/>
-      </Modes>
+      <Modes Count="0"/>
     </RunParams>
-    <RequiredPackages Count="1">
-      <Item1>
-        <PackageName Value="LCL"/>
-      </Item1>
-    </RequiredPackages>
     <Units Count="2">
       <Unit0>
-        <Filename Value="gui_resourceless.lpr"/>
+        <Filename Value="myclasses.lpr"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="form_main.pas"/>
+        <Filename Value="unit_myclasses.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="form_Main"/>
       </Unit1>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
     <Version Value="11"/>
     <Target>
-      <Filename Value="application/$NameOnly($(ProjFile)).$(SrcOS)"/>
+      <Filename Value="myclasses"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>
-  <Debugging>
-    <Exceptions Count="3">
-      <Item1>
-        <Name Value="EAbort"/>
-      </Item1>
-      <Item2>
-        <Name Value="ECodetoolError"/>
-      </Item2>
-      <Item3>
-        <Name Value="EFOpenError"/>
-      </Item3>
-    </Exceptions>
-  </Debugging>
 </CONFIG>
