@@ -1,5 +1,5 @@
 **/backup/
 **/lib/
-**/*.out
 **/*.exe
 **/*.unix
+**/*.unix.*
