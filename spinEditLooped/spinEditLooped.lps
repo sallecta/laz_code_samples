@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="3">
+      <Unit0>
+        <Filename Value="spinEditLooped.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="39" Y="11"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="form_main.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="form_Main"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="46"/>
+        <CursorPos X="37" Y="62"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="gvars.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="2" Y="8"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit2>
+    </Units>
+    <JumpHistory Count="25" HistoryIndex="24">
+      <Position1>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="41" Column="5" TopLine="25"/>
+      </Position1>
+      <Position2>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="7" Column="72"/>
+      </Position2>
+      <Position3>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="9" Column="18" TopLine="4"/>
+      </Position3>
+      <Position4>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="8" Column="21"/>
+      </Position4>
+      <Position5>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="15" Column="25" TopLine="5"/>
+      </Position5>
+      <Position6>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="32" Column="11" TopLine="27"/>
+      </Position6>
+      <Position7>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="41" Column="34" TopLine="27"/>
+      </Position7>
+      <Position8>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="46" Column="21" TopLine="36"/>
+      </Position8>
+      <Position9>
+        <Filename Value="gvars.pas"/>
+      </Position9>
+      <Position10>
+        <Filename Value="gvars.pas"/>
+        <Caret Line="17"/>
+      </Position10>
+      <Position11>
+        <Filename Value="spinEditLooped.lpr"/>
+        <Caret Line="19" Column="46" TopLine="8"/>
+      </Position11>
+      <Position12>
+        <Filename Value="gvars.pas"/>
+        <Caret Line="9" Column="9"/>
+      </Position12>
+      <Position13>
+        <Filename Value="spinEditLooped.lpr"/>
+        <Caret Line="19" Column="47" TopLine="8"/>
+      </Position13>
+      <Position14>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="9" Column="8"/>
+      </Position14>
+      <Position15>
+        <Filename Value="gvars.pas"/>
+        <Caret Line="9" Column="12"/>
+      </Position15>
+      <Position16>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="21" Column="6" TopLine="13"/>
+      </Position16>
+      <Position17>
+        <Filename Value="gvars.pas"/>
+        <Caret Line="12" Column="21"/>
+      </Position17>
+      <Position18>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="50" Column="12" TopLine="28"/>
+      </Position18>
+      <Position19>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="55" Column="72" TopLine="41"/>
+      </Position19>
+      <Position20>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="50" Column="56" TopLine="40"/>
+      </Position20>
+      <Position21>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="55" Column="59" TopLine="40"/>
+      </Position21>
+      <Position22>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="43" Column="20" TopLine="29"/>
+      </Position22>
+      <Position23>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="7" Column="20" TopLine="3"/>
+      </Position23>
+      <Position24>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="61" Column="67" TopLine="47"/>
+      </Position24>
+      <Position25>
+        <Filename Value="form_main.pas"/>
+        <Caret Line="7" Column="36"/>
+      </Position25>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
