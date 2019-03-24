@@ -4,7 +4,7 @@ unit form_Main;
 
 interface
 
-uses Interfaces, Forms, StdCtrls, Classes, SysUtils, FileUtil;
+uses Interfaces, Forms, StdCtrls, Classes, SysUtils, FileUtil, Controls;
 
 type Tform_main = class(TForm)
     {Form Creation}
@@ -14,6 +14,8 @@ type Tform_main = class(TForm)
     MyButton: TButton;
     {Form Actions}
     procedure CloseMainForm(ASender: TObject);
+    procedure From1onMouseDown(Sender: TObject; mouseBtn: TMouseButton;
+  Shift: TShiftState; X, Y: integer);
   end;
 
 implementation
@@ -28,6 +30,8 @@ begin
   Width := 300;
   VertScrollBar.Visible := False;
   HorzScrollBar.Visible := False;
+  OnClick := @CloseMainForm;
+  OnMouseDown :=  @From1onMouseDown;
   {Form Controls}
   MyButton := TButton.Create(Self);
   with MyButton do
@@ -47,6 +51,13 @@ begin
   ASender := ASender;//to get rid of Hint: Parameter "ASender" not used
   Close;
 end;
+procedure Tform_main.From1onMouseDown(Sender: TObject; mouseBtn: TMouseButton;
+  Shift: TShiftState; X, Y: integer);
+begin
+  Sender := Sender;//to get rid of Hint: Parameter "ASender" not used
+  Close;
+end;
+
 
 
 end.
