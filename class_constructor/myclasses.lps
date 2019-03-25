@@ -7,17 +7,18 @@
       <Unit0>
         <Filename Value="myclasses.lpr"/>
         <IsPartOfProject Value="True"/>
-        <CursorPos X="31" Y="9"/>
-        <UsageCount Value="24"/>
+        <IsVisibleTab Value="True"/>
+        <CursorPos X="49" Y="16"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit_myclasses.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <CursorPos X="11" Y="8"/>
-        <UsageCount Value="24"/>
+        <TopLine Value="7"/>
+        <CursorPos X="27" Y="22"/>
+        <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit1>
     </Units>
