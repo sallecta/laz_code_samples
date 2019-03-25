@@ -65,10 +65,10 @@ type
 
 implementation
 
-{$IFDEF FPC}
-uses
-  PropEdits;
-{$ENDIF}
+//{$IFDEF FPC}
+//uses
+//  PropEdits;
+//{$ENDIF}
 
 {$IFDEF FPC}
 procedure Register;
@@ -76,10 +76,10 @@ begin
   RegisterComponents('BGRA Controls', [TBCListBox]);
   RegisterComponents('BGRA Controls', [TBCPaperPanel]);
   RegisterComponents('BGRA Controls', [TBCPaperListBox]);
-{$IFDEF FPC}//#
-  RegisterPropertyEditor(TypeInfo(TBCListBox),
-    TBCPaperListBox, 'ListBox', TClassPropertyEditor);
-{$ENDIF}
+//{$IFDEF FPC}//#
+//  RegisterPropertyEditor(TypeInfo(TBCListBox),
+//    TBCPaperListBox, 'ListBox', TClassPropertyEditor);
+//{$ENDIF}
 end;
 {$ENDIF}
 

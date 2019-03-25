@@ -1,12 +1,12 @@
 object Form1: TForm1
-  Left = 383
+  Left = 591
   Height = 477
-  Top = 165
+  Top = 133
   Width = 588
   Caption = 'Form1'
   ClientHeight = 477
   ClientWidth = 588
-  LCLVersion = '1.1'
+  LCLVersion = '2.0.0.4'
   object BCButton1: TBCButton
     Left = 24
     Height = 40
@@ -168,6 +168,7 @@ object Form1: TForm1
     DropDownArrowSize = 8
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     Rounding.RoundX = 4
     Rounding.RoundY = 4
@@ -178,6 +179,7 @@ object Form1: TForm1
     TextApplyGlobalOpacity = False
     Images = ImageList1
     ImageIndex = 6
+    MemoryUsage = bmuHigh
   end
   object BCButton2: TBCButton
     Left = 24
@@ -340,6 +342,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -353,6 +356,7 @@ object Form1: TForm1
     DropDownMenu = PopupMenu1
     Images = ImageList1
     ImageIndex = 9
+    MemoryUsage = bmuHigh
   end
   object BCButton3: TBCButton
     Left = 24
@@ -515,6 +519,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     Rounding.RoundX = 4
     Rounding.RoundY = 4
@@ -524,6 +529,7 @@ object Form1: TForm1
     RoundingDropDown.RoundOptions = []
     TextApplyGlobalOpacity = False
     DropDownArrow = True
+    MemoryUsage = bmuHigh
   end
   object BCButton4: TBCButton
     Left = 24
@@ -686,6 +692,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -699,6 +706,7 @@ object Form1: TForm1
     DropDownMenu = PopupMenu3
     Images = ImageList1
     ImageIndex = 10
+    MemoryUsage = bmuHigh
   end
   object BCButton5: TBCButton
     Left = 296
@@ -861,6 +869,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -873,6 +882,7 @@ object Form1: TForm1
     TextApplyGlobalOpacity = False
     DropDownMenu = PopupMenu1
     DropDownPosition = bdpBottom
+    MemoryUsage = bmuHigh
   end
   object BCButton7: TBCButton
     Left = 160
@@ -1035,6 +1045,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     Rounding.RoundX = 4
     Rounding.RoundY = 4
@@ -1045,6 +1056,7 @@ object Form1: TForm1
     TextApplyGlobalOpacity = False
     Images = ImageList1
     ImageIndex = 2
+    MemoryUsage = bmuHigh
   end
   object BCButton8: TBCButton
     Left = 160
@@ -1207,6 +1219,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     Rounding.RoundX = 4
     Rounding.RoundY = 4
@@ -1217,6 +1230,7 @@ object Form1: TForm1
     TextApplyGlobalOpacity = False
     DropDownArrow = True
     DropDownMenu = PopupMenu1
+    MemoryUsage = bmuHigh
   end
   object BCButton9: TBCButton
     Left = 24
@@ -1379,6 +1393,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -1393,6 +1408,7 @@ object Form1: TForm1
     DropDownStyle = bdsCommon
     Images = ImageList1
     ImageIndex = 11
+    MemoryUsage = bmuHigh
   end
   object BCButton6: TBCButton
     Left = 24
@@ -1555,6 +1571,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -1568,6 +1585,7 @@ object Form1: TForm1
     DropDownMenu = PopupMenu3
     Images = ImageList1
     ImageIndex = 12
+    MemoryUsage = bmuHigh
   end
   object BCButton10: TBCButton
     Left = 296
@@ -1730,6 +1748,7 @@ object Form1: TForm1
     DropDownArrowSize = 4
     GlobalOpacity = 255
     GlyphMargin = 4
+    InnerMargin = 0
     ParentColor = False
     PopupMenu = PopupMenu1
     Rounding.RoundX = 4
@@ -1743,12 +1762,13 @@ object Form1: TForm1
     DropDownMenu = PopupMenu1
     DropDownStyle = bdsCommon
     DropDownPosition = bdpBottom
+    MemoryUsage = bmuHigh
   end
   object CheckBox1: TCheckBox
     Left = 301
-    Height = 24
+    Height = 17
     Top = 66
-    Width = 116
+    Width = 90
     Caption = 'Show Caption'
     Checked = True
     OnChange = CheckBox1Change
@@ -1989,6 +2009,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2000,6 +2021,7 @@ object Form1: TForm1
       Images = ImageList1
       ImageIndex = 1
       ShowCaption = False
+      MemoryUsage = bmuHigh
     end
     object BCButton12: TBCButton
       Left = 44
@@ -2165,6 +2187,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2176,6 +2199,7 @@ object Form1: TForm1
       Images = ImageList1
       ImageIndex = 0
       ShowCaption = False
+      MemoryUsage = bmuHigh
     end
     object BCButton13: TBCButton
       Left = 86
@@ -2341,6 +2365,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2352,6 +2377,7 @@ object Form1: TForm1
       Images = ImageList1
       ImageIndex = 2
       ShowCaption = False
+      MemoryUsage = bmuHigh
     end
     object Bevel1: TBevel
       Left = 128
@@ -2527,6 +2553,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2537,6 +2564,7 @@ object Form1: TForm1
       TextApplyGlobalOpacity = False
       Images = ImageList1
       ImageIndex = 4
+      MemoryUsage = bmuHigh
     end
     object BCButton15: TBCButton
       Left = 428
@@ -2702,6 +2730,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2712,6 +2741,7 @@ object Form1: TForm1
       TextApplyGlobalOpacity = False
       Images = ImageList1
       ImageIndex = 5
+      MemoryUsage = bmuHigh
     end
     object BCButton16: TBCButton
       Left = 250
@@ -2877,6 +2907,7 @@ object Form1: TForm1
       DropDownArrowSize = 4
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -2888,6 +2919,7 @@ object Form1: TForm1
       DropDownArrow = True
       Images = ImageList1
       ImageIndex = 3
+      MemoryUsage = bmuHigh
     end
     object BCButton17: TBCButton
       Left = 132
@@ -3053,6 +3085,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -3063,6 +3096,7 @@ object Form1: TForm1
       TextApplyGlobalOpacity = False
       Images = ImageList1
       ImageIndex = 6
+      MemoryUsage = bmuHigh
     end
     object Bevel2: TBevel
       Left = 246
@@ -3238,6 +3272,7 @@ object Form1: TForm1
       DropDownArrowSize = 8
       GlobalOpacity = 255
       GlyphMargin = 4
+      InnerMargin = 0
       ParentColor = False
       Rounding.RoundX = 2
       Rounding.RoundY = 2
@@ -3249,6 +3284,7 @@ object Form1: TForm1
       Images = ImageList1
       ImageIndex = 7
       ShowCaption = False
+      MemoryUsage = bmuHigh
     end
   end
   object ActionList1: TActionList

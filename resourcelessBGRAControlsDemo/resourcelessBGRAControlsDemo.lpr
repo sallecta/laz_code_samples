@@ -18,6 +18,7 @@ begin
   {end app taskbar icon}
 
   Application.Run;
+  //glob.Form1.Position:= poDesktopCenter;
 
 
 end.

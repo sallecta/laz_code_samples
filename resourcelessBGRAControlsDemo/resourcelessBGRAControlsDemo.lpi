@@ -33,11 +33,10 @@
         <PackageName Value="LCL"/>
       </Item1>
     </RequiredPackages>
-    <Units Count="3">
+    <Units Count="4">
       <Unit0>
         <Filename Value="resourcelessBGRAControlsDemo.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="gui_resourceless"/>
       </Unit0>
       <Unit1>
         <Filename Value="typeForm1.pas"/>
@@ -47,6 +46,10 @@
         <Filename Value="glob.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit2>
+      <Unit3>
+        <Filename Value="typeFormBcSample.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit3>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -56,6 +59,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="components/bgracontrols-6.1;components/bgrabitmap-9.9.3/bgrabitmap"/>
       <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
   </CompilerOptions>
