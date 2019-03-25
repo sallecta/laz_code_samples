@@ -5,7 +5,7 @@ unit unit_myclasses;
 interface
 
 type
-  TMyClass = class
+  TypeOfMyClass = class
   public
     constructor Create; overload;
   var
@@ -16,7 +16,7 @@ type
 
 implementation
 
-constructor TMyClass.Create;
+constructor TypeOfMyClass.Create;
 begin
   inherited;
   writeln('TMyClass.Create');

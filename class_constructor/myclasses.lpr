@@ -6,11 +6,11 @@ uses
   unit_myclasses;
 
 var
-  classInstance: TMyClass;
+  classInstance: TypeOfMyClass;
 
 begin
 
-  classInstance := TMyClass.Create;
+  classInstance := TypeOfMyClass.Create;
   writeln('classInstance.VarPublic: ', classInstance.VarPublic);
   writeln('length(classInstance.ArrayPublic): ', length(classInstance.ArrayPublic));
 
