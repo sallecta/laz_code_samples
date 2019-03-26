@@ -438,15 +438,15 @@ type
     // general action occur which change "body" e.g. resize)
     procedure RenderControl; virtual;
   public
-    //{$IFDEF FPC}
-    //{ Save all published settings to file }
-    //procedure SaveToFile(AFileName: string); virtual; abstract;
-    //{ Load and assign all published settings from file }
-    //procedure LoadFromFile(AFileName: string); virtual; abstract;
-    //{ Assign the properties from AFileName to this instance }
-    //procedure AssignFromFile(AFileName: string); virtual; abstract;
-    //{ Used by SaveToFile/LoadFromFile }
-    //{$ENDIF}
+    {$IFDEF FPC}
+    { Save all published settings to file }
+    procedure SaveToFile(AFileName: string); virtual; abstract;
+    { Load and assign all published settings from file }
+    procedure LoadFromFile(AFileName: string); virtual; abstract;
+    { Assign the properties from AFileName to this instance }
+    procedure AssignFromFile(AFileName: string); virtual; abstract;
+    { Used by SaveToFile/LoadFromFile }
+    {$ENDIF}
     constructor Create(AOwner: TComponent); override;
     // This disable DrawControl method
     procedure BeginUpdate; virtual;

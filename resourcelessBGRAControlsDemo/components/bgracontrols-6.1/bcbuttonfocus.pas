@@ -390,29 +390,29 @@ type
     function IsImageIndexLinked: boolean; override;
   end;
 
-//{$IFDEF FPC}procedure Register;{$ENDIF}
+{$IFDEF FPC}procedure Register;{$ENDIF}
 
 implementation
 
-uses {$IFDEF FPC}{LCLIntf, PropEdits, LCLProc, GraphPropEdits,}{$ENDIF} Math, BCTools, SysUtils;
+uses {$IFDEF FPC}LCLIntf, PropEdits, LCLProc, GraphPropEdits,{$ENDIF} Math, BCTools, SysUtils;
 
 {$IFDEF FPC}
-//type
-//  TBCButtonImageIndexPropertyEditor = class(TImageIndexPropertyEditor)
-//  protected
-//    function GetImageList: TCustomImageList; override;
-//  end;
-//
-//function TBCButtonImageIndexPropertyEditor.GetImageList: TCustomImageList;
-//var
-//  Component: TPersistent;
-//begin
-//  Component := GetComponent(0);
-//  if Component is TCustomBCButtonFocus then
-//    Result := TCustomBCButtonFocus(Component).Images
-//  else
-//    Result := nil;
-//end;
+type
+  TBCButtonImageIndexPropertyEditor = class(TImageIndexPropertyEditor)
+  protected
+    function GetImageList: TCustomImageList; override;
+  end;
+
+function TBCButtonImageIndexPropertyEditor.GetImageList: TCustomImageList;
+var
+  Component: TPersistent;
+begin
+  Component := GetComponent(0);
+  if Component is TCustomBCButtonFocus then
+    Result := TCustomBCButtonFocus(Component).Images
+  else
+    Result := nil;
+end;
 {$ENDIF}
 
 { TBCButtonFocus }
@@ -423,15 +423,15 @@ begin
 end;
 
 {$IFDEF FPC}
-//procedure Register;
-//begin
-//  //{$I icons\bcbuttonfocus_icon.lrs}
-//  RegisterComponents('BGRA Button Controls', [TBCButtonFocus]);
-//  {$IFDEF FPC}
-//  RegisterPropertyEditor(TypeInfo(integer), TBCButtonFocus,
-//    'ImageIndex', TBCButtonImageIndexPropertyEditor);
-//  {$ENDIF}
-//end;
+procedure Register;
+begin
+  //{$I icons\bcbuttonfocus_icon.lrs}
+  RegisterComponents('BGRA Button Controls', [TBCButtonFocus]);
+  {$IFDEF FPC}
+  RegisterPropertyEditor(TypeInfo(integer), TBCButtonFocus,
+    'ImageIndex', TBCButtonImageIndexPropertyEditor);
+  {$ENDIF}
+end;
 {$ENDIF}
 
 { TBCButtonFocusActionLink }
@@ -1830,7 +1830,7 @@ begin
   FBGRANormal.Free;
   FBGRAHover.Free;
   FBGRAClick.Free;
-  FreeAndNil(FGlyph);
+  {$IFDEF FPC}FreeThenNil{$ELSE}FreeAndNil{$ENDIF}(FGlyph);
   FRounding.Free;
   FRoundingDropDown.Free;
   inherited Destroy;

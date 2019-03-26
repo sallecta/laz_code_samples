@@ -307,9 +307,9 @@ type
     procedure Assign(Source: TPersistent); override;
     { Streaming }
     {$IFDEF FPC}
-    //procedure SaveToFile(AFileName: string); override;
-    //procedure LoadFromFile(AFileName: string); override;
-    //procedure AssignFromFile(AFileName: string); override;
+    procedure SaveToFile(AFileName: string); override;
+    procedure LoadFromFile(AFileName: string); override;
+    procedure AssignFromFile(AFileName: string); override;
     {$ENDIF}
     procedure OnFindClass({%H-}Reader: TReader; const AClassName: string;
       var ComponentClass: TComponentClass);
@@ -1429,48 +1429,48 @@ begin
     inherited Assign(Source);
 end;
 {$IFDEF FPC}
-//procedure TBCCustomImageButton.SaveToFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    WriteComponentAsTextToStream(AStream, Self);
-//    AStream.SaveToFile(AFileName);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
-//
-//procedure TBCCustomImageButton.LoadFromFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    AStream.LoadFromFile(AFileName);
-//    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
-//
-//procedure TBCCustomImageButton.AssignFromFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//  AButton: TBCImageButton;
-//begin
-//  AButton := TBCImageButton.Create(nil);
-//  AStream := TMemoryStream.Create;
-//  try
-//    AStream.LoadFromFile(AFileName);
-//    ReadComponentFromTextStream(AStream, TComponent(AButton), OnFindClass);
-//    Assign(AButton);
-//  finally
-//    AStream.Free;
-//    AButton.Free;
-//  end;
-//end;
+procedure TBCCustomImageButton.SaveToFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    WriteComponentAsTextToStream(AStream, Self);
+    AStream.SaveToFile(AFileName);
+  finally
+    AStream.Free;
+  end;
+end;
+
+procedure TBCCustomImageButton.LoadFromFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    AStream.LoadFromFile(AFileName);
+    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
+  finally
+    AStream.Free;
+  end;
+end;
+
+procedure TBCCustomImageButton.AssignFromFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+  AButton: TBCImageButton;
+begin
+  AButton := TBCImageButton.Create(nil);
+  AStream := TMemoryStream.Create;
+  try
+    AStream.LoadFromFile(AFileName);
+    ReadComponentFromTextStream(AStream, TComponent(AButton), OnFindClass);
+    Assign(AButton);
+  finally
+    AStream.Free;
+    AButton.Free;
+  end;
+end;
 {$ENDIF}
 
 procedure TBCCustomImageButton.OnFindClass(Reader: TReader;

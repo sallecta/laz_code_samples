@@ -1,7 +1,7 @@
 object Form1: TForm1
-  Left = 591
+  Left = 770
   Height = 477
-  Top = 133
+  Top = 104
   Width = 588
   Caption = 'Form1'
   ClientHeight = 477
@@ -1768,7 +1768,7 @@ object Form1: TForm1
     Left = 301
     Height = 17
     Top = 66
-    Width = 90
+    Width = 88
     Caption = 'Show Caption'
     Checked = True
     OnChange = CheckBox1Change

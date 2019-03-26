@@ -103,8 +103,8 @@ type
   public
     { Streaming }
     {$IFDEF FPC}
-    //procedure SaveToFile(AFileName: string); override;
-    //procedure LoadFromFile(AFileName: string); override;
+    procedure SaveToFile(AFileName: string); override;
+    procedure LoadFromFile(AFileName: string); override;
     {$ENDIF}
     procedure OnFindClass({%H-}Reader: TReader; const AClassName: string;
       var ComponentClass: TComponentClass);
@@ -318,31 +318,31 @@ begin
   inherited UpdateControl; // invalidate
 end;
 {$IFDEF FPC}
-//procedure TCustomBCLabel.SaveToFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    WriteComponentAsTextToStream(AStream, Self);
-//    AStream.SaveToFile(AFileName);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
-//
-//procedure TCustomBCLabel.LoadFromFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    AStream.LoadFromFile(AFileName);
-//    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
+procedure TCustomBCLabel.SaveToFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    WriteComponentAsTextToStream(AStream, Self);
+    AStream.SaveToFile(AFileName);
+  finally
+    AStream.Free;
+  end;
+end;
+
+procedure TCustomBCLabel.LoadFromFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    AStream.LoadFromFile(AFileName);
+    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
+  finally
+    AStream.Free;
+  end;
+end;
  {$ENDIF}
 
 procedure TCustomBCLabel.OnFindClass(Reader: TReader; const AClassName: string;

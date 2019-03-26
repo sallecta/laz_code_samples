@@ -268,13 +268,13 @@ type
     procedure UpdateControl; override;
   public
     {$IFDEF FPC}
-    //{ Save all published settings to file }
-    //procedure SaveToFile(AFileName: string); override;
-    //{ Load and assign all published settings from file }
-    //procedure LoadFromFile(AFileName: string); override;
-    //{ Assign the properties from AFileName to this instance }
-    //procedure AssignFromFile(AFileName: string); override;
-    //{ Used by SaveToFile/LoadFromFile }
+    { Save all published settings to file }
+    procedure SaveToFile(AFileName: string); override;
+    { Load and assign all published settings from file }
+    procedure LoadFromFile(AFileName: string); override;
+    { Assign the properties from AFileName to this instance }
+    procedure AssignFromFile(AFileName: string); override;
+    { Used by SaveToFile/LoadFromFile }
     {$ENDIF}
     procedure OnFindClass({%H-}Reader: TReader; const AClassName: string;
       var ComponentClass: TComponentClass);
@@ -382,21 +382,21 @@ type
     function IsImageIndexLinked: boolean; override;
   end;
 
-//{$IFDEF FPC}procedure Register;{$ENDIF}
+{$IFDEF FPC}procedure Register;{$ENDIF}
 
 implementation
 
-uses {$IFDEF FPC}{LCLIntf, PropEdits, GraphPropEdits, LCLProc, }{$ENDIF}Math, BCTools, SysUtils;
+uses {$IFDEF FPC}LCLIntf, PropEdits, GraphPropEdits, LCLProc, {$ENDIF}Math, BCTools, SysUtils;
 
 const
   DropDownReopenDelay = 0.2/(24*60*60);
 
-{$IFDEF FPC} {
+{$IFDEF FPC}//#
 type
   TBCButtonImageIndexPropertyEditor = class(TImageIndexPropertyEditor)
   protected
     function GetImageList: TCustomImageList; override;
-  end;}
+  end;
 {$ENDIF}
 
 { TBCButton }
@@ -407,7 +407,7 @@ begin
   FBCThemeManager:=AValue;
 end;
 
-{$IFDEF FPC}{
+{$IFDEF FPC}//#
 function TBCButtonImageIndexPropertyEditor.GetImageList: TCustomImageList;
 var
   Component: TPersistent;
@@ -417,18 +417,18 @@ begin
     Result := TCustomBCButton(Component).Images
   else
     Result := nil;
-end;}
+end;
 {$ENDIF}
 
 {$IFDEF FPC}
-//{ procedure Register;
-//begin
-//  {$I images\bgracontrols_images.lrs}
-//  //{$I icons\bcbutton_icon.lrs}
-//  RegisterComponents('BGRA Button Controls', [TBCButton]);
-//  RegisterPropertyEditor(TypeInfo(integer), TBCButton,
-//    'ImageIndex', TBCButtonImageIndexPropertyEditor);
-//end;  }
+procedure Register;
+begin
+  {$I images\bgracontrols_images.lrs}
+  //{$I icons\bcbutton_icon.lrs}
+  RegisterComponents('BGRA Button Controls', [TBCButton]);
+  RegisterPropertyEditor(TypeInfo(integer), TBCButton,
+    'ImageIndex', TBCButtonImageIndexPropertyEditor);
+end;
 {$ENDIF}
 
 { TBCButtonActionLink }
@@ -1494,48 +1494,48 @@ begin
   inherited UpdateControl; // indalidate
 end;
 {$IFDEF FPC}//#
-//procedure TCustomBCButton.SaveToFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    WriteComponentAsTextToStream(AStream, Self);
-//    AStream.SaveToFile(AFileName);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
-//
-//procedure TCustomBCButton.LoadFromFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//begin
-//  AStream := TMemoryStream.Create;
-//  try
-//    AStream.LoadFromFile(AFileName);
-//    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
-//  finally
-//    AStream.Free;
-//  end;
-//end;
-//
-//procedure TCustomBCButton.AssignFromFile(AFileName: string);
-//var
-//  AStream: TMemoryStream;
-//  AButton: TBCButton;
-//begin
-//  AButton := TBCButton.Create(nil);
-//  AStream := TMemoryStream.Create;
-//  try
-//    AStream.LoadFromFile(AFileName);
-//    ReadComponentFromTextStream(AStream, TComponent(AButton), OnFindClass);
-//    Assign(AButton);
-//  finally
-//    AStream.Free;
-//    AButton.Free;
-//  end;
-//end;
+procedure TCustomBCButton.SaveToFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    WriteComponentAsTextToStream(AStream, Self);
+    AStream.SaveToFile(AFileName);
+  finally
+    AStream.Free;
+  end;
+end;
+
+procedure TCustomBCButton.LoadFromFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+begin
+  AStream := TMemoryStream.Create;
+  try
+    AStream.LoadFromFile(AFileName);
+    ReadComponentFromTextStream(AStream, TComponent(Self), OnFindClass);
+  finally
+    AStream.Free;
+  end;
+end;
+
+procedure TCustomBCButton.AssignFromFile(AFileName: string);
+var
+  AStream: TMemoryStream;
+  AButton: TBCButton;
+begin
+  AButton := TBCButton.Create(nil);
+  AStream := TMemoryStream.Create;
+  try
+    AStream.LoadFromFile(AFileName);
+    ReadComponentFromTextStream(AStream, TComponent(AButton), OnFindClass);
+    Assign(AButton);
+  finally
+    AStream.Free;
+    AButton.Free;
+  end;
+end;
 {$ENDIF}
 
 procedure TCustomBCButton.OnFindClass(Reader: TReader; const AClassName: string;
@@ -1760,7 +1760,7 @@ begin
   FBGRANormal.Free;
   FBGRAHover.Free;
   FBGRAClick.Free;
-  FreeAndNil(FGlyph);
+  {$IFDEF FPC}FreeThenNil(FGlyph);{$ELSE}FreeAndNil(FGlyph);{$ENDIF}
   FRounding.Free;
   FRoundingDropDown.Free;
   inherited Destroy;
