@@ -6,7 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, StdCtrls,Controls,
-  typeForm1, typeFormBcSample, graphics,FileUtil;
+  typeForm1, typeFormBcSample, typeFormTest,
+  graphics,FileUtil;
 
 const
   ds = DirectorySeparator;

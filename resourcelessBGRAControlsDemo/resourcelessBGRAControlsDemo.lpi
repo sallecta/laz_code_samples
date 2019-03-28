@@ -20,7 +20,7 @@
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
-      <DestinationDirectory Value="/media/data/development/lazarus/pre.git/111"/>
+      <DestinationDirectory Value=""/>
       <CompressFinally Value="False"/>
     </PublishOptions>
     <RunParams>
@@ -37,7 +37,7 @@
         <PackageName Value="LCL"/>
       </Item2>
     </RequiredPackages>
-    <Units Count="4">
+    <Units Count="5">
       <Unit0>
         <Filename Value="resourcelessBGRAControlsDemo.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -54,6 +54,10 @@
         <Filename Value="typeFormBcSample.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit3>
+      <Unit4>
+        <Filename Value="gui_settings_controls.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit4>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
