@@ -11,7 +11,7 @@
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
       <AutoCreateForms Value="False"/>
-      <Title Value="gui_resourceless"/>
+      <Title Value="&quot;$NameOnly($(ProjFile)).$(SrcOS).$(TargetCPU)&quot;"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
@@ -39,9 +39,8 @@
         <IsPartOfProject Value="True"/>
       </Unit0>
       <Unit1>
-        <Filename Value="form_main.pas"/>
+        <Filename Value="typeForm1.pas"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="form_Main"/>
       </Unit1>
     </Units>
   </ProjectOptions>

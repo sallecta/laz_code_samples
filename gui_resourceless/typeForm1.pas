@@ -1,4 +1,4 @@
-unit form_Main;
+unit typeForm1;
 
 {$mode objfpc}{$H+}
 
@@ -6,7 +6,10 @@ interface
 
 uses Interfaces, Forms, StdCtrls, Classes, SysUtils, FileUtil, Controls;
 
-type Tform_main = class(TForm)
+var
+  appname: string;
+
+type TForm1 = class(TForm)
     {Form Creation}
     constructor Create({!}AOwner: TComponent); override;
     {Form Controls}
@@ -20,14 +23,14 @@ type Tform_main = class(TForm)
 
 implementation
 {Form Creation}
-constructor Tform_main.Create(AOwner: TComponent);
+constructor TForm1.Create(AOwner: TComponent);
 begin
 
   {!}inherited CreateNew(AOwner, 1);{!}
-  Caption :='gui_resourceless';
+  Caption :=appname;
   Position := poScreenCenter;
   Height := 100;
-  Width := 300;
+  Width := 350;
   VertScrollBar.Visible := False;
   HorzScrollBar.Visible := False;
   OnClick := @CloseMainForm;
@@ -37,7 +40,7 @@ begin
   with MyButton do
   begin
     Height := 30;
-    Left := 100;
+    Left := 120;
     Top := 32;
     Width := 100;
     Caption := 'Close';
@@ -46,19 +49,20 @@ begin
   end;
 end;
 {Form Actions}
-procedure Tform_main.CloseMainForm(ASender: TObject);
+procedure TForm1.CloseMainForm(ASender: TObject);
 begin
   ASender := ASender;//to get rid of Hint: Parameter "ASender" not used
   Close;
 end;
-procedure Tform_main.From1onMouseDown(Sender: TObject; mouseBtn: TMouseButton;
+procedure TForm1.From1onMouseDown(Sender: TObject; mouseBtn: TMouseButton;
   Shift: TShiftState; X, Y: integer);
 begin
   Sender := Sender;//to get rid of Hint: Parameter "ASender" not used
   Close;
 end;
 
-
+initialization
+  appname := Application.Title;
 
 end.
 

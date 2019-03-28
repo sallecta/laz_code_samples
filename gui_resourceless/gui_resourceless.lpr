@@ -1,16 +1,11 @@
 program gui_resourceless;
-{$ifdef WIN32}
-  {$APPTYPE GUI}
-{$ENDIF}
-
-///$DEFINE console}
 
 uses
   Interfaces, Forms,
-  form_Main;
+  typeForm1;
 
 var
-  f_main: Tform_main;
+  Form1: TForm1;
 
 begin
 
@@ -18,7 +13,7 @@ begin
 
   Application.Initialize;
 
-  Application.CreateForm(Tform_main, f_main);
+  Application.CreateForm(TForm1, Form1);
 
   {app taskbar icon}
   Application.Icon.LoadFromFile('media'+DirectorySeparator+'MyIcon.ico');
