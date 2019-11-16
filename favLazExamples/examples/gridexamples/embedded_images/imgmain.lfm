@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 333
+  Height = 569
+  Top = 152
+  Width = 861
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 861
+  OnCreate = FormCreate
+  LCLVersion = '2.0.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 36
+    Top = 510
+    Width = 861
+    Align = alBottom
+    ClientHeight = 36
+    ClientWidth = 861
+    TabOrder = 0
+    object Button1: TButton
+      Left = 9
+      Height = 29
+      Top = 4
+      Width = 262
+      AutoSize = True
+      Caption = 'Load new image && anchor at selected cell'
+      OnClick = Button1Click
+      TabOrder = 0
+    end
+    object SpinEdit1: TSpinEdit
+      AnchorSideLeft.Control = Label2
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      AnchorSideTop.Side = asrCenter
+      Left = 543
+      Height = 27
+      Top = 5
+      Width = 74
+      Alignment = taRightJustify
+      BorderSpacing.Left = 8
+      MinValue = -100
+      TabOrder = 1
+    end
+    object SpinEdit2: TSpinEdit
+      AnchorSideLeft.Control = Label3
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      AnchorSideTop.Side = asrCenter
+      Left = 648
+      Height = 27
+      Top = 5
+      Width = 80
+      Alignment = taRightJustify
+      BorderSpacing.Left = 8
+      MinValue = -100
+      TabOrder = 2
+    end
+    object Label1: TLabel
+      AnchorSideLeft.Control = Button1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      AnchorSideTop.Side = asrCenter
+      Left = 287
+      Height = 19
+      Top = 9
+      Width = 225
+      BorderSpacing.Left = 16
+      Caption = 'Image offset with respect to anchor:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      AnchorSideLeft.Control = Label1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Label1
+      Left = 528
+      Height = 19
+      Top = 9
+      Width = 7
+      BorderSpacing.Left = 16
+      Caption = 'x'
+      ParentColor = False
+    end
+    object Label3: TLabel
+      AnchorSideLeft.Control = SpinEdit1
+      AnchorSideLeft.Side = asrBottom
+      AnchorSideTop.Control = Button1
+      AnchorSideTop.Side = asrCenter
+      Left = 633
+      Height = 19
+      Top = 9
+      Width = 7
+      BorderSpacing.Left = 16
+      Caption = 'y'
+      ParentColor = False
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 546
+    Width = 861
+    Panels = <>
+  end
+  object Panel2: TPanel
+    Left = 0
+    Height = 26
+    Top = 0
+    Width = 861
+    Align = alTop
+    Caption = 'Hold CTRL down and drag the images with the left mouse button to a new location'
+    TabOrder = 2
+  end
+  object OpenDialog1: TOpenDialog
+    left = 137
+    top = 93
+  end
+end

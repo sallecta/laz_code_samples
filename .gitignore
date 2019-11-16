@@ -1,5 +1,8 @@
 **/backup/
+**/ignore/
+**/generated/
 **/lib/
 **/*.exe
+**/*.res
 **/*.unix
 **/*.unix.*

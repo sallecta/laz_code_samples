@@ -7,22 +7,22 @@
       <Unit0>
         <Filename Value="myclasses.lpr"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <CursorPos X="49" Y="16"/>
+        <CursorPos X="15" Y="9"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="unit_myclasses.pas"/>
         <IsPartOfProject Value="True"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="7"/>
-        <CursorPos X="27" Y="22"/>
+        <TopLine Value="4"/>
+        <CursorPos X="5" Y="27"/>
         <UsageCount Value="36"/>
         <Loaded Value="True"/>
       </Unit1>
     </Units>
-    <JumpHistory Count="3" HistoryIndex="2">
+    <JumpHistory Count="4" HistoryIndex="3">
       <Position1>
         <Filename Value="unit_myclasses.pas"/>
         <Caret Line="13" Column="25"/>
@@ -35,6 +35,10 @@
         <Filename Value="unit_myclasses.pas"/>
         <Caret Line="8" Column="16"/>
       </Position3>
+      <Position4>
+        <Filename Value="unit_myclasses.pas"/>
+        <Caret Column="16" TopLine="4"/>
+      </Position4>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
